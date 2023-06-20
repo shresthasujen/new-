@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/logo1.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style1.css" />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <link
       rel="stylesheet"
@@ -13,157 +14,847 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Document</title>
+    <title>お助け</title>
   </head>
   <body>
     <main>
       <header>
         <section class="header-1">
-          <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="d-flex">
-                <a class="navbar-brand text-dark img-logo" href="#">
-                  <img src="images/logo.png" alt="" />
-                  Car Service
-                </a>
-              </div>
-              <div class="d-flex align-items-center gap-3 d-none d-md-block">
-                <a class="navbar-brand fs-6 text-dark" href="#">
-                  <i class="fa-sharp fa-regular fa-clock"></i>
-                  09:00AM — 17:00PM
-                </a>
-                <a class="navbar-brand fs-6 text-dark" href="#">
-                  <i class="fa-solid fa-phone"></i>
+          <div class="sticky">
+            <div class="container">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                <div
+                  class="container-fluid d-flex justify-content-between align-items-center"
+                >
+                  <a class="navbar-brand" href="index.html">
+                    <img src="images/logo1.png" class="navbar-logo" alt="" />
+                    <img
+                      src="images/logoname.png"
+                      class="img-fluid logo-name"
+                      alt=""
+                    />
+                  </a>
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <i
+                      class="fa-solid fa-phone d-md-none d-md-block text-danger"
+                    ></i>
+                  </button>
 
-                  +1-323-913-4688
-                </a>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <div class="phone-1">
+                          <a
+                            class="navbar-brand nav-item contact"
+                            href="tel:0138-76-6586"
+                            onclick="window.open('tel:+1234567890', '_self');"
+                          >
+                            <p class="top-bottom">電話</p>
+                            <i
+                              class="fa-solid fa-phone d-md-none d-md-block"
+                            ></i>
+                            <span class="front-no">0138</span> -76-6586
+                            <p class="top-bottom">かけて</p>
+                          </a>
+                        </div>
+                        <p
+                          class="opening-1 mb-0 .d-sm-none .d-md-block .d-none .d-sm-block"
+                        >
+                          電話サポート24時間
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <div class="container">
+              <div class="row video-cont">
+                <div class="col position-relative">
+                  <video autoplay muted loop id="myVideo">
+                    <source src="images/hakodate.mp4" type="video/mp4" />
+                    Your browser does not support HTML5 video.
+                  </video>
+                  <div class="content">
+                    <h1 class="heading-1">オールインワンサービス</h1>
+                    <p class="heading-1">函館市の優れた地元企業の一部</p>
+                  </div>
+                  <div class="web-aim-text">
+                    <h2>函館市で困った?</h2>
+                    <p>
+                      始める準備はできましたか?クリックするだけです!電話アイコンをクリックして、目的のサービスに到達します。
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col bg-image-last">
+                  <div class="container position-relative">
+                    <img
+                      src="images/bg-imagemain (3).jpg"
+                      class="img-fluid bg-imagelast"
+                      alt=""
+                    />
+                    <img
+                      src="images/bg-mob (2).jpg"
+                      class="img-fluid bg-mob"
+                      alt=""
+                    />
+
+                    <div class="themeimg position-absolute">
+                      <a href="tel:0138-76-6586">
+                        <img src="images/webaimmm.png" alt=""
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="web-aim-text-pc">
+                    <p>
+                      始める準備はできましたか?クリックするだけです!電話アイコンをクリックして、目的のサービスに到達します。
+                    </p>
+                  </div>
+
+                  <div class="wrap">
+                    <div class="search">
+                      <input
+                        type="text"
+                        class="searchTerm"
+                        placeholder="どのようなサービスをお探しですか？"
+                      />
+                      <a
+                        href="tel:0138-76-6586"
+                        onclick="window.open('tel:+1234567890', '_self');"
+                        class="no-padding"
+                      >
+                        <button type="submit" class="searchButton">
+                          <i class="fa fa-search"></i></button
+                      ></a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
       </header>
-      <div class="sticky">
-        <div class="container">
-          <nav class="navbar navbar-expand navbar-light">
-            <div class="container-fluid text-white">
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a
-                      class="nav-link text-white active"
-                      aria-current="page"
-                      href="#"
-                      >HOME</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white" href="#">ABOUT US</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white" href="#">SERVICES</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </div>
-      <div class="slider-eg image-hero position-relative">
-        <img src="images/car2.jpg" class="img-fluid" alt="..." />
-        <div class="position-absolute top-50 start-50 translate-middle">
-          <div class="text-center">
-            <h1 class="text-white">Get a your car a fresh look</h1>
-            <button class="btn btn-md btn-outline-light mt-3">
-              Let's get started
-            </button>
-          </div>
-        </div>
-      </div>
     </main>
-    <section class="py-5" id="features">
-      <div class="container">
-        <div class="animate">
-          <h2 class="mb-4 text-center">First-Class Car Servicing</h2>
+
+    <!-- =======================================Clickable Content-========================= -->
+    <div class="container">
+      <div class="row g-1 clickable-content">
+        <div class="col-md-2 col-sm-6 col-xs clickable">
+          <div class="main-content">
+            <a href="#household">
+              <div class="image-blog">
+                <img src="images/household.jpg" alt="Avatar" class="image" />
+              </div>
+              <h3 class="text-center">ハンディマン</h3>
+              <div class="view-more">
+                <button type="button" class="btn btn-primary">View all</button>
+              </div>
+            </a>
+          </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4 col-sm-6 mb-3">
-            <div class="animate">
+        <div class="col-md-2 col-sm-6 col-xs clickable">
+          <div class="main-content">
+            <a href="#construction">
               <div class="image-blog">
-                <img src="images/service1.jpg" alt="" />
+                <img src="images/construction.jpg" alt="Avatar" class="image" />
               </div>
-              <h5 class="mt-2 text-dark">Demolition</h5>
-              <p class="font-light">Lorem ipsum dolor sit amet consectetur.</p>
+              <h3 class="text-center">コンストラクションサービス</h3>
+              <button type="button" class="btn btn-primary">View all</button>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-xs clickable">
+          <div class="main-content">
+            <a href="#cleaning">
+              <div class="image-blog">
+                <img src="images/cleaning.jpg" alt="Avatar" class="image" />
+              </div>
+
+              <h3>そうじと配置</h3>
+              <button type="button" class="btn btn-primary">View all</button>
+            </a>
+          </div>
+        </div>
+        <!-- <div class="col-md-2 col-sm-6 col-xs">
+                        <div class="main-content">
+                          <a href="#scrap">
+                            <div class="image-blog">
+                              <img src="images/scrap.jpg" alt="Avatar" class="image" />
+                            </div>
+                            <h3 class="text-center">スクラップ材料</h3>
+                            <button type="button" class="btn btn-primary">View all</button>
+                          </a>
+                        </div>
+                      </div> -->
+        <div class="col-md-2 col-sm-6 col-xs clickable">
+          <div class="main-content">
+            <a href="#business">
+              <div class="image-blog">
+                <img src="images/business.jpg" alt="Avatar" class="image" />
+              </div>
+              <h3>ビジネスに関する悩み</h3>
+              <button type="button" class="btn btn-primary">View all</button>
+            </a>
+          </div>
+        </div>
+        <!-- <div class="col-md-2 col-sm-6 col-xs">
+                        <div class="main-content">
+                          <a href="#peoples">
+                            <div class="image-blog">
+                              <img src="images/people.jpg" alt="Avatar" class="image" />
+                            </div>
+                            <h3 class="text-center">パーソナルサービス</h3>
+                            <button type="button" class="btn btn-primary">View all</button>
+                          </a>
+                        </div>
+                      </div> -->
+      </div>
+    </div>
+
+    <section class="features" id="features">
+      <div class="container">
+        <div class="sub-head">
+          <h3>
+            <div class="vert-line" id="household"></div>
+            ハンディマン
+          </h3>
+        </div>
+
+        <div class="boxes">
+          <div class="row g-1">
+            <!-- box=01 -->
+            <!-- Light bulb exchange 100 yen business 36 -->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="light bulb exchange.html">
+                  <div class="image-blog">
+                    <img src="images/boximages/roof construction.jpg" alt="" />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white text-truncate">
+                      電球交換 100円
+                    </h5>
+                    <p class="fw-bolder price price-1">100円～</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Can and Pipe Works 04-->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="canandpipe.html">
+                  <div class="image-blog">
+                    <img src="images/boximages/can and pipe.jpg" alt="" />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white">水道トラブル</h5>
+                    <p class="fw-bolder price price-1">3,000円～</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Landscaping  06 -->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="landscaping.html">
+                  <div class="image-blog">
+                    <img src="images/boximages/decoration.jpg" alt="" />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white">造園</h5>
+                    <p class="fw-bolder price price-1">3,000円～</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Glass Works 07 -->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="glassworks.html">
+                  <div class="image-blog">
+                    <img src="images/boximages/glassworkmain.jpg" alt="" />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white">ガラス工事</h5>
+                    <p class="fw-bolder price price-1">3,000円～</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Electric Works03 -->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="electricwork.html">
+                  <div class="image-blog">
+                    <img src="images/boximages/electricworks.jpg" alt="" />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white text-truncate">電気工事</h5>
+                    <p class="fw-bolder price price-1">5,000円～</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Handrail installation 08 -->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="handrail installation.html">
+                  <div class="image-blog">
+                    <img src="images/boximages/handrail.jpg" alt="" />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white text-truncate">
+                      手すり取り付け
+                    </h5>
+                    <p class="fw-bolder price price-1">25,000円～</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- snow shoveling 14 -->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="snow shover.html">
+                  <div class="image-blog">
+                    <img src="images/boximages/snow shoveling.jpg" alt="" />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white text-truncate">
+                      雪かき・除雪・雪下ろし代行
+                    </h5>
+                    <p class="fw-bolder price price-1">5,000円～</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Rat extermination   23-->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="rat-extermination.html">
+                  <div class="image-blog">
+                    <img src="images/boximages/rat extermination.jpg" alt="" />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white">ネズミ駆除</h5>
+                    <p class="fw-bolder price price-1">15,000円～</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Miscallenous 25 -->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="miscellaneous.html">
+                  <div class="image-blog">
+                    <img
+                      src="images/boximages/interior-decoration.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white text-truncate">雑品屋</h5>
+                    <p class="fw-bolder price price-1">0円～</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Grave clean 32 -->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="graveclean.html">
+                  <div class="image-blog">
+                    <img src="images/boximages/graveclean.jpg" alt="" />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white">お墓の掃除</h5>
+                    <p class="fw-bolder price price-1">5,000円～</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!--=-------box 35--------->
+            <!-- mowing 35 -->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="mowing.html">
+                  <div class="image-blog">
+                    <img src="images/boximages/mowing.jpg" alt="" />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white">草刈</h5>
+                    <p class="fw-bolder price price-1">6,000円～</p>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 mb-3">
-            <div class="animate">
-              <div class="image-blog">
-                <img src="images/service2.jpg" alt="" />
+        </div>
+
+        <!-- ----------------------------------------Construction part----------------------------- -->
+        <div class="sub-head">
+          <h3>
+            <div class="vert-line" id="construction"></div>
+            コンストラクションサービス
+          </h3>
+        </div>
+        <div class="boxes">
+          <div class="row g-1">
+            <!-- Scaffolding Business 15 -->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="Scaffolding.html">
+                  <div class="image-blog">
+                    <img
+                      src="images/boximages/scaffolding business.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white">足場工事</h5>
+                    <p class="fw-bolder price price-1">50,000円～</p>
+                  </div>
+                </a>
               </div>
-              <h5 class="mt-2 text-dark">Buy Scrap cars</h5>
-              <p class="font-light">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <!-- Shutter installation and construction business 17 -->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="shutter-installation.html">
+                  <div class="image-blog">
+                    <img
+                      src="images/boximages/shutter installation2.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white text-truncate">
+                      シャッター設置・工事
+                    </h5>
+                    <p class="fw-bolder price price-1">120,000円～</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- kitchen rennovation 11 -->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="kitchen-rennovation.html">
+                  <div class="image-blog">
+                    <img
+                      src="images/boximages/kitchen rennovation.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white text-truncate">
+                      キッチンリフォーム
+                    </h5>
+                    <p class="fw-bolder price price-1">250,000円～</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Exterior wall renovation 12-->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="exterior wall rennovationn.html">
+                  <div class="image-blog">
+                    <img
+                      src="images/boximages/Exterior wall renovationbox.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white text-truncate">
+                      外壁リフォーム
+                    </h5>
+                    <p class="fw-bolder price price-1">250,000円～</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Tile Construction Business 16 -->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="tile-construction.html">
+                  <div class="image-blog">
+                    <img
+                      src="images/boximages/tile construction business.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white">瓦工事</h5>
+                    <p class="fw-bolder price price-1">300,000円～</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- demolition 16 -->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="animate position-relative">
+                <a href="demolition.html">
+                  <div class="image-blog">
+                    <img src="images/boximages/image1.jpg" alt="" />
+                  </div>
+                  <div class="image-name">
+                    <button type="button" class="view-btn btn btn-outline-dark">
+                      view
+                    </button>
+                    <h5 class="mt-2 text-white">解体工事<!--Demolition--></h5>
+                    <p class="fw-bold price price-1">400,000円～</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- New construction 13 -->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="new construction.html">
+                  <div class="image-blog">
+                    <img
+                      src="images/boximages/new construction (1).jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white">新築</h5>
+                    <p class="fw-bolder price price-1">6,000,000円～</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- roof painting 09-->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="roofpainting.html">
+                  <div class="image-blog">
+                    <img src="images/boximages/roof painting (1).jpg" alt="" />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white">屋根塗装</h5>
+                    <p class="fw-bolder price price-1">600,000円～</p>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 mb-3">
-            <div class="animate">
-              <div class="image-blog">
-                <img src="images/service3.jpg" alt="" />
+        </div>
+        <!-- box=15 -->
+
+        <!-- ---------------------------------Cleaning and Arrangement---------------------------- -->
+        <div class="sub-head">
+          <h3>
+            <div class="vert-line" id="cleaning"></div>
+            そうじと配置
+          </h3>
+        </div>
+        <div class="boxes">
+          <div class="row g-1">
+            <!--Trash Take-out 18-->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="trashtakeout.html">
+                  <div class="image-blog">
+                    <img src="images/boximages/trash takeout2.jpg" alt="" />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white">不用品回収</h5>
+                    <p class="fw-bold price price-1">3,000円～</p>
+                  </div>
+                </a>
               </div>
-              <h5 class="mt-2 text-dark">Trash Take-out</h5>
-              <p class="font-light">
-Lorem ipsum dolor sit amet consectetur.              </p>
+            </div>
+            <!--arrangement of belongings 20 -->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="arrangement-of-belongings.html">
+                  <div class="image-blog">
+                    <img
+                      src="images/boximages/arrangementbelongingss.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white">遺品整理</h5>
+                    <p class="fw-bolder price price-1">3,000円～</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- House cleaning 22 -->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="house-cleaning.html">
+                  <div class="image-blog">
+                    <img src="images/boximages/raingutter.jpg" alt="" />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white text-truncate">
+                      ハウスクリーニング
+                    </h5>
+                    <p class="fw-bolder price price-1">5,000円～</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- migrating goods 19 -->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="migrating goods.html">
+                  <div class="image-blog">
+                    <img src="images/boximages/migrating goods.jpg" alt="" />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white">引っ越し</h5>
+                    <p class="fw-bolder price price-1">20,000円～</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Air condition cleaning 05 -->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="aircondition-cleaning.html">
+                  <div class="image-blog">
+                    <img
+                      src="images/boximages/interior decoration.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white text-truncate">
+                      エアコンクリーニング
+                    </h5>
+                    <p class="fw-bolder price price-1">7,000円～</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- box=20 -->
+            <!-- Wallpaper and cloth-- 10 -->
+
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="wallpaper and cloth.html">
+                  <div class="image-blog">
+                    <img
+                      src="images/boximages/wallpaper and cloth.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white text-truncate">
+                      壁紙・クロスの張り替え
+                    </h5>
+                    <p class="fw-bolder price price-1">30,000円～</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- box=10 -->
+            <!--Air conditioner installation work 02-->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="aircondition-installation.html">
+                  <div class="image-blog">
+                    <img
+                      src="images/boximages/building rennovation.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white text-truncate">
+                      エアコン取り付け・取り外し・交換
+                    </h5>
+                    <p class="fw-bolder price price-1">40,000円～</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!--Buy Scap cars 24-->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="scrapcars.html">
+                  <div class="image-blog">
+                    <img src="images/boximages/image2.jpg" alt="" />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white">廃車の買取</h5>
+                    <p class="fw-bold price price-1">5,000円～</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---------------------------------Business Services---------------------------- -->
+        <div class="sub-head">
+          <h3>
+            <div class="vert-line" id="business"></div>
+            ビジネスに関する悩み
+          </h3>
+        </div>
+        <div class="boxes">
+          <div class="row g-1">
+            <!-- subsidy subsidy 28-->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="subsidy.html">
+                  <div class="image-blog">
+                    <img src="images/boximages/subsidy.jpg" alt="" />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white">助成金　補助金</h5>
+                    <p class="fw-bolder price price-1">5,000円～</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Advertising 26-->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="advertising.html">
+                  <div class="image-blog">
+                    <img src="images/boximages/advertisement.jpg" alt="" />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white">広告</h5>
+                    <p class="fw-bolder price price-1">6,000円～</p>
+                  </div></a
+                >
+              </div>
+            </div>
+            <!-- website creation 27 -->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="websitecreation.html">
+                  <div class="image-blog">
+                    <img src="images/boximages/website.jpg" alt="" />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white">サイト作成</h5>
+                    <p class="fw-bolder price price-1">25,000円～</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- plant rental 34 -->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="plan rental.html">
+                  <div class="image-blog">
+                    <img src="images/boximages/plant rental.jpg" alt="" />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white text-truncate">植物レンタル</h5>
+                    <p class="fw-bolder price price-1">500円～</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- recruit 29-->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="recruit.html">
+                  <div class="image-blog">
+                    <img src="images/boximages/recruit.jpg" alt="" />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white">仕事の派遣</h5>
+                    <p class="fw-bolder price price-1">0円～</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!--------------box 30------------ -->
+            <!-- Administrative scrivener 30 -->
+            <div class="col-md-2 col-sm-6 col-xs">
+              <div class="position-relative">
+                <a href="administrative scrivener.html">
+                  <div class="image-blog">
+                    <img
+                      src="images/boximages/Administrative scrivener.jpg                "
+                      alt=""
+                    />
+                  </div>
+                  <div class="image-name">
+                    <h5 class="mt-2 text-white">行政書士</h5>
+                    <p class="fw-bolder price price-1">3,000円～</p>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="py-5 dark">
+    <!-- ========================================Service Bio=================================== -->
+    <section class="service-content position-relative">
+      <div class="service-bg">
+        <img src="images/servicebg.jpg" class="img-fluid" alt="" />
+      </div>
+      <div class="service-text">
+        <h1>こんにちは函館市民</h1>
+        <p>今すぐ携帯電話からサービスにアクセスする</p>
+      </div>
+      <div class="mobile-1">
+        <img src="images/mobile-1.png" alt="" />
+      </div>
+    </section>
+    <section class="footer">
       <div class="container">
-        <h1 class="text-white text-center py-5">Why choose us?</h1>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="p-3 border border-light rounded">
-              <div class="d-flex align-items-start gap-3">
-                <i class="fa-regular fa-star text-white h4"></i>
-                <div>
-                  <h5 class="text-white">Premium Service</h5>
-                  <p class="text-white">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sapiente, corrupti.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="p-3 border border-light rounded">
-              <div class="d-flex align-items-start gap-3">
-                <i class="fa-regular fa-star text-white h4"></i>
-                <div>
-                  <h5 class="text-white">Variety of Locations</h5>
-                  <p class="text-white">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sapiente, corrupti.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="p-3 border border-light rounded">
-              <div class="d-flex align-items-start gap-3">
-                <i class="fa-regular fa-star text-white h4"></i>
-                <div>
-                  <h5 class="text-white">Qualified Team</h5>
-                  <p class="text-white">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sapiente, corrupti.
-                  </p>
-                </div>
-              </div>
+        <div class="foot text-center">
+          <div class="card-service2 card-social">
+            <h4 class="py-3">運営メディア・</h4>
+            <p class="text-secndary">社交的になろう</p>
+            <div class="follow">
+              <a
+                href="https://www.facebook.com/profile.php?id=100092250961961&mibextid=ZbWKwL"
+                ><i class="fa-brands fa-facebook text-white"></i
+              ></a>
+              <a href="#"><i class="fa-brands fa-instagram text-white"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok text-white"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter text-white"></i></a>
             </div>
           </div>
         </div>
+      </div>
+      <div class="terms-conditions">
+        <div class="container">
+          <div class="row">
+            <div class="col text-end px-3">
+              <a href="#"> Terms of service</a>
+            </div>
+            <div class="col text-start">
+              <a href="privacy-policy.html">Privacy and policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===========================================alllover================================= -->
+
+    <section class="dark copyright">
+      <div class="container">
+        <p class="text-center">
+          copyright 2023 お助け.com website maintained by IT JAPAN NEPAL
+        </p>
       </div>
     </section>
   </body>
